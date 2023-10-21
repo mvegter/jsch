@@ -53,6 +53,11 @@ public class KeyPair2IT {
     try {
       session.connect(timeout);
       assertTrue(session.isConnected());
+
+      session.disconnect();
+      
+      session.connect(timeout);
+      assertTrue(session.isConnected());
     } finally {
       session.disconnect();
     }
