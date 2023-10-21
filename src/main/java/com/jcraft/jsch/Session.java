@@ -1998,10 +1998,6 @@ public class Session {
     }
     io = null;
     socket = null;
-    // Reset the incoming/outgoing sequence
-    seqi = 0;
-    seqo = 0;
-
     // synchronized(jsch.pool){
     // jsch.pool.removeElement(this);
     // }
